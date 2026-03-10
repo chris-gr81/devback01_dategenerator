@@ -1,0 +1,24 @@
+{
+  "name": "devback01_dategenerator",
+  "version": "1.0.0",
+  "description": "DevKarriere Backend Masterclass Excercise 1",
+  "homepage": "https://github.com/chris-gr81/devback01_dategenerator#readme",
+  "bugs": {
+    "url": "https://github.com/chris-gr81/devback01_dategenerator/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris-gr81/devback01_dategenerator.git"
+  },
+  "license": "ISC",
+  "author": "Christian Grimm",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsx index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
