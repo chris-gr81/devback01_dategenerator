@@ -3,6 +3,7 @@ import {
   generateDatesArray,
   sortDatesArray,
 } from "./util/date.util";
+import { writeTXTfile } from "./util/file.util";
 
 function main() {
   // Read dates
@@ -35,9 +36,9 @@ function main() {
 
   // Format dates
   const formatedDatesArray = formatDatesArray(sortedDatesArray);
-  console.log(formatedDatesArray);
 
   // Write dates to file
+  writeTXTfile(formatedDatesArray, "datelog.txt");
 }
 
 main();

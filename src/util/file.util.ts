@@ -1,5 +1,17 @@
 import fs from "fs";
 
-export function writeTXTfile(data, fileName, filePath) {
-  const path = filePath || "${__dirname}/../";
+export function writeTXTfile(
+  data: string[],
+  fileName: string,
+  filePath?: string,
+) {
+  const path = filePath || `${__dirname}/../../output/`;
+
+  try {
+    data.push("----------\n"); // adding seperator between entries
+    fs.writeFileSync(`${path}${fileName}`, data.join("\n"), { flag: "a" });
+  } catch (err) {
+    console.log(`Writing files to data.txt went wrong: ${err}`);
+  }
+  console.log("File written successfully");
 }
