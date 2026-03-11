@@ -4,7 +4,7 @@ export function writeTXTfile(
   data: string[],
   fileName: string,
   filePath?: string,
-) {
+): void {
   const path = filePath || `${__dirname}/../../output/`;
 
   try {
