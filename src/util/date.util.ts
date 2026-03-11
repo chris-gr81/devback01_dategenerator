@@ -14,12 +14,12 @@ export function generateDatesArray(iteration: number): Date[] {
   return unsortedDates;
 }
 
-export function sortDatesArray(datesArray: Date[]) {
+export function sortDatesArray(datesArray: Date[]): Date[] {
   console.log("Sorting Date-Array");
   return datesArray.sort(compareAsc);
 }
 
-export function formatDatesArray(datesArray: Date[]) {
+export function formatDatesArray(datesArray: Date[]): string[] {
   console.log("Formating Date-Array");
   const formatedArray = datesArray.map((item) => {
     return format(item, "dd.MM.yyyy");
